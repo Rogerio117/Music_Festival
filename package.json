@@ -1,0 +1,34 @@
+{
+  "name": "first_proyect",
+  "version": "1.0.0",
+  "description": "Learning SASS and NPM",
+  "keywords": [
+    "SASS",
+    "NPM",
+    "JAVASCRIPT",
+    "HTML",
+    "CSS",
+    "GULP"
+  ],
+  "homepage": "https://github.com/Rogerio117/Music_Festival#readme",
+  "bugs": {
+    "url": "https://github.com/Rogerio117/Music_Festival/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Rogerio117/Music_Festival.git"
+  },
+  "license": "ISC",
+  "author": "Rogerio Canto, Juan Pablo",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch src/scss:dist/css",
+    "dev": "gulp dev"
+  },
+  "devDependencies": {
+    "gulp": "^5.0.1",
+    "gulp-sass": "^6.0.1",
+    "sass": "^1.97.2"
+  }
+}
