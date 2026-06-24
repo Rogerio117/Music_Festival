@@ -5,7 +5,7 @@
     @include m.container;
 
     @include m.tablet {
-        @include m.grid(2, 5rem);
+        @include m.grid(2);
     }
 }
 
