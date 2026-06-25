@@ -478,3 +478,65 @@ body > section {
   color: #4CB8B3;
   font-weight: 700;
 }
+
+.lineup {
+  background-color: #F53756;
+}
+.lineup h3, .lineup .day {
+  text-align: center;
+  color: #FFFFFF;
+}
+.lineup .day {
+  font-size: 3rem;
+  text-transform: uppercase;
+}
+
+.stages-container {
+  width: 95%;
+  max-width: 120rem;
+  margin: 0 auto;
+}
+@media (min-width: 768px) {
+  .stages-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5rem;
+  }
+}
+
+.stage {
+  padding-top: 2rem;
+}
+.stage .stage-name {
+  font-size: 3rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.schedule {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.schedule li {
+  padding: 2.5rem;
+  font-weight: 700;
+}
+.schedule li span {
+  font-weight: 400;
+}
+
+.bg-yellow {
+  background-color: #fdda00;
+}
+.bg-yellow li:nth-child(odd) {
+  background-color: rgb(255, 222.9743083004, 23.5);
+}
+
+.bg-green {
+  background-color: #4CB8B3;
+}
+.bg-green li:nth-child(odd) {
+  background-color: rgb(94.258, 191.242, 186.752);
+}
