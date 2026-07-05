@@ -1,20 +1,28 @@
-import { src, dest, watch } from 'gulp';
+import { src, dest, watch, series } from 'gulp';
 
 import * as dartSass from 'sass'
 import gulpSass from 'gulp-sass';
 
 const sass = gulpSass(dartSass);
 
+export function js (done) {
+
+    return src('src/js/app.js')
+        .pipe( dest('build/js') )
+
+}
+
 export function css( done ) {
 
-    src('src/scss/app.scss')
+    return src('src/scss/app.scss', {sourcemaps: true})
         .pipe( sass().on('error', sass.logError) )
-        .pipe( dest('build/css') )
-
-    done();
+        .pipe( dest('build/css', {sourcemaps: true}) )
 
 }
 
 export function dev() {
     watch('src/scss/**/*.scss', css) // all folders and archives
+    watch('src/js/**/*.js', js)
 }
+
+export default series(js, css,  dev)
